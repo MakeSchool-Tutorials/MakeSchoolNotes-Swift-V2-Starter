@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9e4-wg-71R">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lzu-mz-8qS">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Notes-->
@@ -51,6 +52,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dXi-TP-ue3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1375" y="267"/>
+        </scene>
+        <!--Display Note View Controller-->
+        <scene sceneID="tXK-De-fsj">
+            <objects>
+                <viewController id="lzu-mz-8qS" customClass="DisplayNoteViewController" customModule="MakeSchoolNotes" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oyZ-cI-0Fi"/>
+                        <viewControllerLayoutGuide type="bottom" id="oMa-ao-7Bw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2OR-rt-K0t">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cat-4e-yev">
+                                <rect key="frame" x="20" y="40" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PY1-iH-eab">
+                                <rect key="frame" x="20" y="97" width="560" height="437"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PY1-iH-eab" firstAttribute="top" secondItem="Cat-4e-yev" secondAttribute="bottom" constant="27" id="0AZ-ox-YMT"/>
+                            <constraint firstItem="oMa-ao-7Bw" firstAttribute="top" secondItem="PY1-iH-eab" secondAttribute="bottom" constant="66" id="DZF-9L-zod"/>
+                            <constraint firstItem="PY1-iH-eab" firstAttribute="trailing" secondItem="2OR-rt-K0t" secondAttribute="trailingMargin" id="OhP-1a-Elg"/>
+                            <constraint firstItem="PY1-iH-eab" firstAttribute="trailing" secondItem="Cat-4e-yev" secondAttribute="trailing" id="QBP-zI-8zc"/>
+                            <constraint firstItem="PY1-iH-eab" firstAttribute="leading" secondItem="Cat-4e-yev" secondAttribute="leading" id="WRk-5O-2gI"/>
+                            <constraint firstItem="PY1-iH-eab" firstAttribute="leading" secondItem="2OR-rt-K0t" secondAttribute="leadingMargin" id="k9k-Rb-mYv"/>
+                            <constraint firstItem="Cat-4e-yev" firstAttribute="top" secondItem="oyZ-cI-0Fi" secondAttribute="bottom" constant="20" id="l6Q-La-7N1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="btx-kh-wwT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2214" y="315"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jZz-6R-BZp">
