@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="u2p-Xo-LIX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9e4-wg-71R">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--List Notes Table View Controller-->
+        <!--Notes-->
         <scene sceneID="dVN-r5-8ll">
             <objects>
                 <tableViewController id="u2p-Xo-LIX" customClass="ListNotesTableViewController" customModule="MakeSchoolNotes" customModuleProvider="target" sceneMemberID="viewController">
@@ -15,7 +15,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="listNotesTableViewCell" rowHeight="60" id="e5G-wG-mNh" customClass="ListNotesTableViewCell" customModule="MakeSchoolNotes" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="600" height="60"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="e5G-wG-mNh" id="Du3-q9-QAa">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="59"/>
@@ -46,8 +46,27 @@
                             <outlet property="delegate" destination="u2p-Xo-LIX" id="msW-Ug-yhm"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Notes" id="W11-5D-bNL"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dXi-TP-ue3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1375" y="267"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jZz-6R-BZp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9e4-wg-71R" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zdH-Wr-4Yf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="u2p-Xo-LIX" kind="relationship" relationship="rootViewController" id="KF2-rY-CfM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kHh-aX-yCY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="563" y="267"/>
         </scene>
