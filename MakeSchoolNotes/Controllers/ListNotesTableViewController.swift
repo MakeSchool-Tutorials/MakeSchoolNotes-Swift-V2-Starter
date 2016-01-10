@@ -10,18 +10,22 @@ import UIKit
 
 class ListNotesTableViewController: UITableViewController {
 
+  var notes = [Note]()
+
   override func viewDidLoad() {
     super.viewDidLoad()
   }
   
   override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 10
+    return notes.count
   }
 
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier("listNotesTableViewCell", forIndexPath: indexPath) as! ListNotesTableViewCell
-    cell.noteTitleLabel.text = "note's title"
-    cell.noteModificationTimeLabel.text = "note's modification time"
+    let row = indexPath.row
+    let note = notes[row]
+    cell.noteTitleLabel.text = note.title
+    cell.noteModificationTimeLabel.text = note.modificationTime.convertToString()
     return cell
   }
   
