@@ -48,7 +48,13 @@
                             <outlet property="delegate" destination="u2p-Xo-LIX" id="msW-Ug-yhm"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Notes" id="W11-5D-bNL"/>
+                    <navigationItem key="navigationItem" title="Notes" id="W11-5D-bNL">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="UaA-DR-Dbu">
+                            <connections>
+                                <segue destination="lzu-mz-8qS" kind="show" id="L4U-jn-gh9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dXi-TP-ue3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -90,8 +96,21 @@
                             <constraint firstItem="Cat-4e-yev" firstAttribute="top" secondItem="oyZ-cI-0Fi" secondAttribute="bottom" constant="20" id="l6Q-La-7N1"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="3j7-Jr-rxD">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="N0F-Le-cbM">
+                            <connections>
+                                <segue destination="lXs-Fp-aOg" kind="unwind" identifier="Cancel" unwindAction="unwindToListNotesViewController:" id="LBD-9Q-GIo"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="od6-Ww-aDb">
+                            <connections>
+                                <segue destination="lXs-Fp-aOg" kind="unwind" identifier="Save" unwindAction="unwindToListNotesViewController:" id="rfp-a9-ezV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="btx-kh-wwT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="lXs-Fp-aOg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2214" y="315"/>
         </scene>
@@ -114,4 +133,7 @@
             <point key="canvasLocation" x="563" y="267"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="VuY-JW-ssz"/>
+    </inferredMetricsTieBreakers>
 </document>
