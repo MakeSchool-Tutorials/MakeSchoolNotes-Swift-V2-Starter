@@ -48,4 +48,9 @@ class ListNotesTableViewController: UITableViewController {
       // we'll add code later
   }
   
+  override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+    notes.removeAtIndex(indexPath.row)
+    tableView.reloadData()
+  }
+  
 }
