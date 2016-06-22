@@ -47,8 +47,8 @@
 		2E4A07AA1C42F497007F415F /* DisplayNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayNoteViewController.swift; sourceTree = "<group>"; };
 		2E4A07AE1C42F539007F415F /* NSDate+convertToString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+convertToString.swift"; sourceTree = "<group>"; };
 		2E4A07B01C42F599007F415F /* ListNotesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListNotesTableViewCell.swift; sourceTree = "<group>"; };
-		65BF365E1D07D9D800CB1BB3 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Frameworks/Realm.framework; sourceTree = "<group>"; };
-		65BF365F1D07D9D800CB1BB3 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Frameworks/RealmSwift.framework; sourceTree = "<group>"; };
+		65BF365E1D07D9D800CB1BB3 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		65BF365F1D07D9D800CB1BB3 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +67,6 @@
 		2E4A07871C42F3B0007F415F = {
 			isa = PBXGroup;
 			children = (
-				65BF365E1D07D9D800CB1BB3 /* Realm.framework */,
-				65BF365F1D07D9D800CB1BB3 /* RealmSwift.framework */,
 				2E4A07B21C42F8A8007F415F /* Frameworks */,
 				2E4A07921C42F3B0007F415F /* MakeSchoolNotes */,
 				2E4A07911C42F3B0007F415F /* Products */,
@@ -142,6 +140,8 @@
 		2E4A07B21C42F8A8007F415F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				65BF365E1D07D9D800CB1BB3 /* Realm.framework */,
+				65BF365F1D07D9D800CB1BB3 /* RealmSwift.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
