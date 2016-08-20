@@ -15,6 +15,7 @@
 		2E4A07AB1C42F497007F415F /* DisplayNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4A07AA1C42F497007F415F /* DisplayNoteViewController.swift */; };
 		2E4A07AF1C42F539007F415F /* NSDate+convertToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4A07AE1C42F539007F415F /* NSDate+convertToString.swift */; };
 		2E4A07B11C42F599007F415F /* ListNotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4A07B01C42F599007F415F /* ListNotesTableViewCell.swift */; };
+		848490D31D68F5610043C60B /* MakeSchoolNotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 848490D11D68F5610043C60B /* MakeSchoolNotes.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +42,7 @@
 		2E4A07AA1C42F497007F415F /* DisplayNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayNoteViewController.swift; sourceTree = "<group>"; };
 		2E4A07AE1C42F539007F415F /* NSDate+convertToString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+convertToString.swift"; sourceTree = "<group>"; };
 		2E4A07B01C42F599007F415F /* ListNotesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListNotesTableViewCell.swift; sourceTree = "<group>"; };
+		848490D21D68F5610043C60B /* MakeSchoolNotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MakeSchoolNotes.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				2E4A07A61C42F3F2007F415F /* Views */,
 				2E4A07A71C42F3F2007F415F /* Models */,
 				2E4A07931C42F3B0007F415F /* AppDelegate.swift */,
+				848490D11D68F5610043C60B /* MakeSchoolNotes.xcdatamodeld */,
 				2E4A07971C42F3B0007F415F /* Main.storyboard */,
 				2E4A079A1C42F3B0007F415F /* Assets.xcassets */,
 				2E4A079C1C42F3B0007F415F /* LaunchScreen.storyboard */,
@@ -204,6 +207,7 @@
 				2E4A07AB1C42F497007F415F /* DisplayNoteViewController.swift in Sources */,
 				2E4A07941C42F3B0007F415F /* AppDelegate.swift in Sources */,
 				2E4A07A91C42F40B007F415F /* ListNotesTableViewController.swift in Sources */,
+				848490D31D68F5610043C60B /* MakeSchoolNotes.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +377,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		848490D11D68F5610043C60B /* MakeSchoolNotes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				848490D21D68F5610043C60B /* MakeSchoolNotes.xcdatamodel */,
+			);
+			currentVersion = 848490D21D68F5610043C60B /* MakeSchoolNotes.xcdatamodel */;
+			path = MakeSchoolNotes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2E4A07881C42F3B0007F415F /* Project object */;
 }
