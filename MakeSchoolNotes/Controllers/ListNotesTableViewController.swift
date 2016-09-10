@@ -9,9 +9,9 @@
 import UIKit
 
 class ListNotesTableViewController: UITableViewController {
-
-  override func viewDidLoad() {
-    super.viewDidLoad()
-  }
-  
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
 }

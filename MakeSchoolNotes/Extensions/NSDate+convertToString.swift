@@ -8,8 +8,8 @@
 
 import Foundation
 
-extension NSDate {
-  func convertToString() -> String {
-    return NSDateFormatter.localizedStringFromDate(self, dateStyle: NSDateFormatterStyle.MediumStyle, timeStyle: NSDateFormatterStyle.MediumStyle)
-  }
+extension Date {
+    func convertToString() -> String {
+        return DateFormatter.localizedString(from: self, dateStyle: DateFormatter.Style.medium, timeStyle: DateFormatter.Style.medium)
+    }
 }
