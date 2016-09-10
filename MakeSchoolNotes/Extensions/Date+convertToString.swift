@@ -1,5 +1,5 @@
 //
-//  NSDate+convertToString.swift
+//  Date+convertToString.swift
 //  MakeSchoolNotes
 //
 //  Created by Chris Orcutt on 1/10/16.
